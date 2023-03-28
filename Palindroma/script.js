@@ -32,6 +32,17 @@ function parolaPalindroma(string){
   const parolaJoin = parolaReverse.join("");
   
   return parolaJoin;
+
+  // //*Sintassi compatta
+  // return string.split("").reverse().join("");
+  
+  // //*Soluzione con ciclo for
+  // for (let i = promptParola.length - 1; i >= 0; i--) {
+  //   promptParola += string[i];
+  //   console.log(promptParola);
+  // }
+  // return promptParola;
+
 }
 
 
