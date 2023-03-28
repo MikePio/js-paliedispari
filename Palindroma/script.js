@@ -11,15 +11,26 @@ let promptParola = (prompt('Inserisci la parola e verificherò se è palindroma'
 let parolaRovesciata = parolaPalindroma(promptParola);
 
 if(parolaRovesciata == promptParola){
-  console.log('La parola inserita è palindroma')
+  console.log('La parola inserita è palindroma');
 }else{
-  console.log('La parola inserita NON è palindroma')
+  console.log('La parola inserita NON è palindroma');
 }
 
+// //*soluzione con switch al posto di if ed else
+  // switch (promptParola == parolaRovesciata) {
+  //   case true:
+  //     console.log('La parola inserita è palindroma')
+  //     break;
+      
+  //     default:
+  //       console.log('La parola inserita NON è palindroma');
+  //       break;
+  // }
+  
 console.log(promptParola);
 console.log(parolaRovesciata);
 
-function parolaPalindroma(string){
+function parolaPalindroma(string){  
   // divide la stringa in singole lettere
   const parolaSplit = string.split("");
   console.log(parolaSplit);
@@ -30,7 +41,7 @@ function parolaPalindroma(string){
   
   // unisce le singole lettere in una stringa
   const parolaJoin = parolaReverse.join("");
-  
+
   return parolaJoin;
 
   // //*Sintassi compatta
@@ -42,8 +53,9 @@ function parolaPalindroma(string){
   //   console.log(promptParola);
   // }
   // return promptParola;
-
+  
 }
+
 
 
 
